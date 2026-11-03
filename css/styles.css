@@ -155,25 +155,27 @@ button {
     max-width: 570px;
 }
 .hero-content h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: var(--text);
     font-size: clamp(40px, 4.5vw, 56px);
     line-height: 1.08;
     letter-spacing: -1.5px;
 }
 .hero-content h2 {
-    margin-bottom: 20px;
-    color: var(--text-secondary);
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.2;
+    max-width: 550px;
+    margin-bottom: 22px;
+    color: #e5e5e5;
+    font-size: clamp(20px, 2.2vw, 25px);
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
 }
 .hero-description {
     max-width: 540px;
     margin-bottom: 28px;
     color: var(--text-secondary);
     font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 .hero-actions {
     display: flex;
@@ -412,16 +414,26 @@ button {
     max-width: 620px;
 }
 .about-content h2 {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     color: var(--text);
     font-size: 42px;
-    line-height: 1.05;
+    line-height: 1.1;
 }
 .about-content p {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     color: #d6d6d6;
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 15px;
+    line-height: 1.85;
+}
+.about-content > .eyebrow {
+    margin-bottom: 12px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.about-content p:last-child {
+    margin-bottom: 0;
 }
 /* ================================
    SKILLS
@@ -747,10 +759,13 @@ button {
         letter-spacing: -1px;
     }
     .hero-content h2 {
-        font-size: 20px;
+        margin-bottom: 18px;
+        font-size: 19px;
+        line-height: 1.45;
     }
     .hero-description {
         font-size: 14px;
+        line-height: 1.8;
     }
     .hero-actions {
         flex-direction: row;
@@ -821,7 +836,13 @@ button {
         height: 500px;
     }
     .about-content h2 {
+        margin-bottom: 20px;
         font-size: 36px;
+    }
+    .about-content p {
+        margin-bottom: 18px;
+        font-size: 14px;
+        line-height: 1.8;
     }
     /* Skills */
     .skills-groups {
